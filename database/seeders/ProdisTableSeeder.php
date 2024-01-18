@@ -1,0 +1,24 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+
+class ProdisTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    public function run(): void
+    {
+        DB::table('prodis')->insert([
+            'prodi_id' => "b084843f-3642-4b43-89cf-445877a8f120",
+            'fakultas_id' =>"5599845a-6877-4f84-9c92-eb939b592d3d",
+            'nama' => 'Sistem Informasi',
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
+    }
+}
